@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Vocabulary";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Vocabulary_Load);

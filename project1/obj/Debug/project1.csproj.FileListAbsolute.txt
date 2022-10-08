@@ -104,8 +104,6 @@ C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Te
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\Vocabulary_Game\project1\obj\Debug\project1.csproj.CoreCompileInputs.cache
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\Vocabulary_Game\project1\obj\Debug\project1.exe
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\Vocabulary_Game\project1\obj\Debug\project1.pdb
-C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\bin\Debug\Data.mdf
-C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\bin\Debug\Data_log.ldf
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\bin\Debug\project1.exe.config
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\bin\Debug\project1.exe
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\bin\Debug\project1.pdb
@@ -128,3 +126,4 @@ C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Te
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\obj\Debug\project1.csproj.CoreCompileInputs.cache
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\obj\Debug\project1.exe
 C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\obj\Debug\project1.pdb
+C:\Users\Phuc Khang\OneDrive - Trường ĐH CNTT - University of Information Technology\III\C#\project\VocabularyGame\project1\obj\Debug\project1.Complete.resources

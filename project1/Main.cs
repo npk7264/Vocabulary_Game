@@ -28,21 +28,13 @@ namespace project1
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            Functions.Connect();
         }
 
         private void picStart_Click(object sender, EventArgs e)
         {
-            if (Program.nick_name == null)
-            {
-                NickName frm = new NickName();
-                frm.ShowDialog();
-            }
-            else
-            {
-                Topic frm = new Topic();
-                frm.ShowDialog();
-            }
+            NickName frm = new NickName();
+            frm.ShowDialog();
         }
 
         private void picVocabularyList_Click(object sender, EventArgs e)

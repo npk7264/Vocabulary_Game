@@ -67,6 +67,7 @@
     <Compile Include="Complete.Designer.cs">
       <DependentUpon>Complete.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="HighScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +85,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="UserMethod.cs" />
     <Compile Include="Vocabulary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +112,9 @@
     <Compile Include="Topic.Designer.cs">
       <DependentUpon>Topic.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Complete.resx">
+      <DependentUpon>Complete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HighScore.resx">
       <DependentUpon>HighScore.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,13 +263,6 @@
     <None Include="Resources\3994376_arrow_back_left_navigation_previous_icon.png" />
     <None Include="Resources\126585_back_previous_arrow_icon.png" />
     <None Include="bin\Debug\topic_picture\animal_topic.png" />
-    <Content Include="Data.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Data.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\unmute.png" />
     <None Include="Resources\mute.png" />
     <None Include="Resources\vocabulary.png" />
@@ -287,6 +282,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

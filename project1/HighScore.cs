@@ -21,26 +21,23 @@ namespace project1
 
         private void HighScore_Load(object sender, EventArgs e)
         {
-            dt.Columns.Add("Id", typeof(int));
-            dt.Columns.Add("Nick name", typeof(string));
-            dt.Columns.Add("Score", typeof(int));
-            dgvHighScore.DataSource = dt;
+
         }
 
         private void cboTopic_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cboTopic.Text != null)
             {
-                List<User> user = UserMethod.ReadFile(Application.StartupPath + "\\" + cboTopic.Text + "\\data.txt");
-                user = user.OrderByDescending(o => o.Score).ToList();
-                if (user.Count != 0)
-                {
-                    foreach (User u in user)
-                    {
-                        dt.Rows.Add(user.IndexOf(u) + 1, u.Name, u.Score);
-                        dgvHighScore.DataSource = dt;
-                    }
-                }
+                string sql;
+                sql = "SELECT * FROM " + cboTopic.Text + " ORDER BY Score DESC";
+                dt = Functions.GetDataToTable(sql);
+                dgvHighScore.DataSource = dt;
+                dgvHighScore.Columns[0].HeaderText = "Name";
+                dgvHighScore.Columns[1].HeaderText = "Score";
+                dgvHighScore.Columns[0].Width = 400;
+                dgvHighScore.Columns[1].Width = 400;
+                dgvHighScore.AllowUserToAddRows = false;
+                dgvHighScore.EditMode = DataGridViewEditMode.EditProgrammatically;
             }
         }
     }

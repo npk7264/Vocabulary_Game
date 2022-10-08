@@ -53,6 +53,7 @@
             this.ClientSize = new System.Drawing.Size(994, 560);
             this.Controls.Add(this.txtNickName);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "NickName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

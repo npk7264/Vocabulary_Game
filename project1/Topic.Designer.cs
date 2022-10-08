@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAnimalTopic = new System.Windows.Forms.Button();
-            this.btnSportTopic = new System.Windows.Forms.Button();
             this.btnFoodTopic = new System.Windows.Forms.Button();
+            this.btnAnimalTopic = new System.Windows.Forms.Button();
             this.btnFruitTopic = new System.Windows.Forms.Button();
+            this.btnSportTopic = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,40 +47,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1152, 394);
             this.panel1.TabIndex = 5;
-            // 
-            // btnAnimalTopic
-            // 
-            this.btnAnimalTopic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAnimalTopic.BackColor = System.Drawing.Color.Beige;
-            this.btnAnimalTopic.BackgroundImage = global::project1.Properties.Resources.animal_topic;
-            this.btnAnimalTopic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAnimalTopic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnimalTopic.Font = new System.Drawing.Font("Gill Sans MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnimalTopic.Location = new System.Drawing.Point(615, 18);
-            this.btnAnimalTopic.Name = "btnAnimalTopic";
-            this.btnAnimalTopic.Size = new System.Drawing.Size(237, 357);
-            this.btnAnimalTopic.TabIndex = 3;
-            this.btnAnimalTopic.Text = "Animal";
-            this.btnAnimalTopic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAnimalTopic.UseVisualStyleBackColor = false;
-            this.btnAnimalTopic.Click += new System.EventHandler(this.btnAnimalTopic_Click);
-            // 
-            // btnSportTopic
-            // 
-            this.btnSportTopic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSportTopic.BackColor = System.Drawing.Color.Beige;
-            this.btnSportTopic.BackgroundImage = global::project1.Properties.Resources.sport_topic;
-            this.btnSportTopic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSportTopic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSportTopic.Font = new System.Drawing.Font("Gill Sans MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSportTopic.Location = new System.Drawing.Point(331, 18);
-            this.btnSportTopic.Name = "btnSportTopic";
-            this.btnSportTopic.Size = new System.Drawing.Size(247, 357);
-            this.btnSportTopic.TabIndex = 2;
-            this.btnSportTopic.Text = "Sport";
-            this.btnSportTopic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSportTopic.UseVisualStyleBackColor = false;
-            this.btnSportTopic.Click += new System.EventHandler(this.btnSportTopic_Click);
             // 
             // btnFoodTopic
             // 
@@ -99,6 +65,23 @@
             this.btnFoodTopic.UseVisualStyleBackColor = false;
             this.btnFoodTopic.Click += new System.EventHandler(this.btnFoodTopic_Click);
             // 
+            // btnAnimalTopic
+            // 
+            this.btnAnimalTopic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAnimalTopic.BackColor = System.Drawing.Color.Beige;
+            this.btnAnimalTopic.BackgroundImage = global::project1.Properties.Resources.animal_topic;
+            this.btnAnimalTopic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAnimalTopic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnimalTopic.Font = new System.Drawing.Font("Gill Sans MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnimalTopic.Location = new System.Drawing.Point(615, 18);
+            this.btnAnimalTopic.Name = "btnAnimalTopic";
+            this.btnAnimalTopic.Size = new System.Drawing.Size(237, 357);
+            this.btnAnimalTopic.TabIndex = 3;
+            this.btnAnimalTopic.Text = "Animal";
+            this.btnAnimalTopic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAnimalTopic.UseVisualStyleBackColor = false;
+            this.btnAnimalTopic.Click += new System.EventHandler(this.btnAnimalTopic_Click);
+            // 
             // btnFruitTopic
             // 
             this.btnFruitTopic.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -116,6 +99,23 @@
             this.btnFruitTopic.UseVisualStyleBackColor = false;
             this.btnFruitTopic.Click += new System.EventHandler(this.btnFruitTopic_Click);
             // 
+            // btnSportTopic
+            // 
+            this.btnSportTopic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSportTopic.BackColor = System.Drawing.Color.Beige;
+            this.btnSportTopic.BackgroundImage = global::project1.Properties.Resources.sport_topic;
+            this.btnSportTopic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSportTopic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSportTopic.Font = new System.Drawing.Font("Gill Sans MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSportTopic.Location = new System.Drawing.Point(331, 18);
+            this.btnSportTopic.Name = "btnSportTopic";
+            this.btnSportTopic.Size = new System.Drawing.Size(247, 357);
+            this.btnSportTopic.TabIndex = 2;
+            this.btnSportTopic.Text = "Sport";
+            this.btnSportTopic.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSportTopic.UseVisualStyleBackColor = false;
+            this.btnSportTopic.Click += new System.EventHandler(this.btnSportTopic_Click);
+            // 
             // Topic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +126,7 @@
             this.ClientSize = new System.Drawing.Size(1176, 620);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Topic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

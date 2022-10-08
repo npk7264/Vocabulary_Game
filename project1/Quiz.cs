@@ -115,6 +115,7 @@ namespace project1
 
         private void picNext_Click(object sender, EventArgs e)
         {
+            string sql;
             if (visited.Count < 5)
             {
                 bool check;
@@ -152,7 +153,24 @@ namespace project1
                 pnResult.Visible = false;
                 picNext.Visible = false;
                 pnMic.Visible = false;
-                UserMethod.WriteFile(Program.nick_name, Program.nick_score, Program.topic_string, Application.StartupPath + "\\" + Program.topic_string + "\\data.txt");
+                int count = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Name = N'" + Program.nick_name.ToString() + "'"));
+                if (count == 0)
+                {
+                    sql = "INSERT INTO " + Program.topic_string.ToUpper() + " VALUES (N'" + Program.nick_name + "'" + ", " + Program.nick_score.ToString() + ")";
+                    Functions.RunSQL(sql);
+                }
+                else
+                {
+                    int flag = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Score < " + Program.nick_score));
+                    if (flag > 0)
+                    {
+                        sql = "UPDATE " + Program.topic_string.ToUpper() + " SET Score = " + Program.nick_score + " WHERE Name = N'" + Program.nick_name + "'";
+                        Functions.RunSQL(sql);
+                    }
+                }
+                this.Close();
+                Complete frm = new Complete();
+                frm.ShowDialog();
             }
         }
 

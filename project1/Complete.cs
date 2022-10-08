@@ -16,5 +16,10 @@ namespace project1
         {
             InitializeComponent();
         }
+
+        private void Complete_Load(object sender, EventArgs e)
+        {
+            lbYourScore.Text = Program.nick_score.ToString();
+        }
     }
 }

@@ -78,7 +78,7 @@
             this.lbScore.BackColor = System.Drawing.Color.Transparent;
             this.lbScore.Font = new System.Drawing.Font("Hobo Std", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbScore.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lbScore.Location = new System.Drawing.Point(732, 81);
+            this.lbScore.Location = new System.Drawing.Point(811, 81);
             this.lbScore.Name = "lbScore";
             this.lbScore.Size = new System.Drawing.Size(238, 63);
             this.lbScore.TabIndex = 2;
@@ -161,7 +161,7 @@
             this.picUnmute.BackgroundImage = global::project1.Properties.Resources.volume_mute;
             this.picUnmute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picUnmute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUnmute.Location = new System.Drawing.Point(1023, 69);
+            this.picUnmute.Location = new System.Drawing.Point(1104, 71);
             this.picUnmute.Name = "picUnmute";
             this.picUnmute.Size = new System.Drawing.Size(105, 82);
             this.picUnmute.TabIndex = 8;
@@ -175,7 +175,7 @@
             this.picMute.BackgroundImage = global::project1.Properties.Resources.volume_up;
             this.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picMute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMute.Location = new System.Drawing.Point(1023, 69);
+            this.picMute.Location = new System.Drawing.Point(1104, 71);
             this.picMute.Name = "picMute";
             this.picMute.Size = new System.Drawing.Size(105, 82);
             this.picMute.TabIndex = 7;
@@ -211,7 +211,7 @@
             this.picBack.BackgroundImage = global::project1.Properties.Resources.back_arrow;
             this.picBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBack.Location = new System.Drawing.Point(246, 69);
+            this.picBack.Location = new System.Drawing.Point(328, 71);
             this.picBack.Name = "picBack";
             this.picBack.Size = new System.Drawing.Size(107, 84);
             this.picBack.TabIndex = 19;
@@ -266,7 +266,7 @@
             this.lbQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lbQuestion.Font = new System.Drawing.Font("Hobo Std", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuestion.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbQuestion.Location = new System.Drawing.Point(410, 71);
+            this.lbQuestion.Location = new System.Drawing.Point(484, 71);
             this.lbQuestion.Name = "lbQuestion";
             this.lbQuestion.Size = new System.Drawing.Size(302, 82);
             this.lbQuestion.TabIndex = 25;
@@ -293,6 +293,7 @@
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.picBack);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
