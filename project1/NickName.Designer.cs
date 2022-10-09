@@ -35,10 +35,10 @@
             // 
             this.txtNickName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNickName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNickName.Font = new System.Drawing.Font("Copperplate Gothic Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickName.Location = new System.Drawing.Point(182, 219);
+            this.txtNickName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNickName.Location = new System.Drawing.Point(182, 220);
             this.txtNickName.Name = "txtNickName";
-            this.txtNickName.Size = new System.Drawing.Size(630, 44);
+            this.txtNickName.Size = new System.Drawing.Size(630, 47);
             this.txtNickName.TabIndex = 1;
             this.txtNickName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNickName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNickName_KeyUp);

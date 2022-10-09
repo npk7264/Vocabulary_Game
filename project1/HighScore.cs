@@ -21,7 +21,7 @@ namespace project1
 
         private void HighScore_Load(object sender, EventArgs e)
         {
-
+            cboTopic.Text = "ANIMAL";
         }
 
         private void cboTopic_SelectedIndexChanged_1(object sender, EventArgs e)

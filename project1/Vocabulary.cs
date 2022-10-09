@@ -35,7 +35,15 @@ namespace project1
             dt.Rows.Add("9", "Orange", "Quả cam");
             dt.Rows.Add("10", "Watermelon", "Quả dưa hấu");
 
-            dataGridView1.DataSource = dt;
+            dgvVocabulary.DataSource = dt;
+        }
+
+        private void cboTopic_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboTopic.Text != null)
+            {
+
+            }
         }
     }
 }

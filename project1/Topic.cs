@@ -45,7 +45,47 @@ namespace project1
             frm.ShowDialog();
         }
 
-        private void Topic_Load(object sender, EventArgs e) { 
+        private void Topic_Load(object sender, EventArgs e) {
+        }
+
+        private void btnFruitTopic_MouseHover(object sender, EventArgs e)
+        {
+            btnFruitTopic.BackColor = Color.LightSteelBlue;
+        }
+
+        private void btnFruitTopic_MouseLeave(object sender, EventArgs e)
+        {
+            btnFruitTopic.BackColor = Color.Beige;
+        }
+
+        private void btnSportTopic_MouseHover(object sender, EventArgs e)
+        {
+            btnSportTopic.BackColor = Color.LightSteelBlue;
+        }
+
+        private void btnSportTopic_MouseLeave(object sender, EventArgs e)
+        {
+            btnSportTopic.BackColor = Color.Beige;
+        }
+
+        private void btnAnimalTopic_MouseHover(object sender, EventArgs e)
+        {
+            btnAnimalTopic.BackColor = Color.LightSteelBlue;
+        }
+
+        private void btnAnimalTopic_MouseLeave(object sender, EventArgs e)
+        {
+            btnAnimalTopic.BackColor = Color.Beige;
+        }
+
+        private void btnFoodTopic_MouseHover(object sender, EventArgs e)
+        {
+            btnFoodTopic.BackColor = Color.LightSteelBlue;
+        }
+
+        private void btnFoodTopic_MouseLeave(object sender, EventArgs e)
+        {
+            btnFoodTopic.BackColor = Color.Beige; ;
         }
     }
 }
