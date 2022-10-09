@@ -82,7 +82,7 @@
             this.lbScore.Name = "lbScore";
             this.lbScore.Size = new System.Drawing.Size(238, 63);
             this.lbScore.TabIndex = 2;
-            this.lbScore.Text = "SCORE:";
+            this.lbScore.Text = "SCORE: 0";
             this.lbScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnQuestion
@@ -211,7 +211,7 @@
             this.picBack.BackgroundImage = global::project1.Properties.Resources.back_arrow;
             this.picBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBack.Location = new System.Drawing.Point(328, 71);
+            this.picBack.Location = new System.Drawing.Point(314, 71);
             this.picBack.Name = "picBack";
             this.picBack.Size = new System.Drawing.Size(107, 84);
             this.picBack.TabIndex = 19;

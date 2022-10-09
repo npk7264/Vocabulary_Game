@@ -40,7 +40,7 @@
             this.dgvHighScore.Name = "dgvHighScore";
             this.dgvHighScore.RowHeadersWidth = 51;
             this.dgvHighScore.RowTemplate.Height = 24;
-            this.dgvHighScore.Size = new System.Drawing.Size(1137, 468);
+            this.dgvHighScore.Size = new System.Drawing.Size(970, 431);
             this.dgvHighScore.TabIndex = 0;
             // 
             // cboTopic
@@ -53,7 +53,7 @@
             "Food",
             "Fruit",
             "Sport"});
-            this.cboTopic.Location = new System.Drawing.Point(429, 32);
+            this.cboTopic.Location = new System.Drawing.Point(346, 32);
             this.cboTopic.Name = "cboTopic";
             this.cboTopic.Size = new System.Drawing.Size(303, 44);
             this.cboTopic.TabIndex = 1;
@@ -63,13 +63,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 597);
+            this.ClientSize = new System.Drawing.Size(994, 560);
             this.Controls.Add(this.cboTopic);
             this.Controls.Add(this.dgvHighScore);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "HighScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HighScore";
             this.Load += new System.EventHandler(this.HighScore_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHighScore)).EndInit();
             this.ResumeLayout(false);

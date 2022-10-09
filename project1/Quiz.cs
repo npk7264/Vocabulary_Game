@@ -90,6 +90,8 @@ namespace project1
             {
                 if (txtInput.Text.Trim().ToLower() == answer[index])
                 {
+                    SpVoice obj = new SpVoice();
+                    obj.Speak("Correct", SpeechVoiceSpeakFlags.SVSFDefault);
                     score += 2;
                     lbScore.Text = "SCORE: " + score;
                     pnQuestion.Visible = false;
@@ -98,10 +100,11 @@ namespace project1
                 }
                 else
                 {
+                    SpVoice obj = new SpVoice();
+                    obj.Speak("Incorrect", SpeechVoiceSpeakFlags.SVSFDefault);
                     pnResult.Visible = true;
                     picResult.BackgroundImage = Properties.Resources.wrong_answer;
                 }
-                //
                 ++question;
                 lbCorrectAnswer.Text = answer[index].ToUpper();
                 pnQuestion.Visible = false;
@@ -195,7 +198,7 @@ namespace project1
 
         private void picBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void picMic_Click(object sender, EventArgs e)

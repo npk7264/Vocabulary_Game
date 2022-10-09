@@ -286,5 +286,14 @@
   <ItemGroup>
     <None Include="Resources\win.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion_sing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sing1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
