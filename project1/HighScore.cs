@@ -29,12 +29,14 @@ namespace project1
             if (cboTopic.Text != null)
             {
                 string sql;
-                sql = "SELECT * FROM " + cboTopic.Text + " ORDER BY Score DESC";
+                sql = "SELECT ROW_NUMBER() OVER (ORDER BY Score DESC) AS [Rank], Name, Score FROM " + cboTopic.Text + " ORDER BY Score DESC";
                 dt = Functions.GetDataToTable(sql);
                 dgvHighScore.DataSource = dt;
-                dgvHighScore.Columns[0].HeaderText = "Name";
-                dgvHighScore.Columns[1].HeaderText = "Score";
-                dgvHighScore.Columns[0].Width = 300;
+                dgvHighScore.Columns[0].HeaderText = "Rank";
+                dgvHighScore.Columns[1].HeaderText = "Name";
+                dgvHighScore.Columns[2].HeaderText = "Score";
+                dgvHighScore.Columns[0].Width = 100;
+                dgvHighScore.Columns[1].Width = 300;
                 dgvHighScore.Columns[1].Width = 200;
                 dgvHighScore.AllowUserToAddRows = false;
                 dgvHighScore.EditMode = DataGridViewEditMode.EditProgrammatically;
