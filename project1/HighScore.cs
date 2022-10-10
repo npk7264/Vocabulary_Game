@@ -36,8 +36,8 @@ namespace project1
                 dgvHighScore.Columns[1].HeaderText = "Name";
                 dgvHighScore.Columns[2].HeaderText = "Score";
                 dgvHighScore.Columns[0].Width = 100;
-                dgvHighScore.Columns[1].Width = 300;
                 dgvHighScore.Columns[1].Width = 200;
+                dgvHighScore.Columns[2].Width = 200;
                 dgvHighScore.AllowUserToAddRows = false;
                 dgvHighScore.EditMode = DataGridViewEditMode.EditProgrammatically;
             }

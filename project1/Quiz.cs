@@ -49,6 +49,32 @@ namespace project1
             "eagle",
             "penguin"
         };
+        public string[] food =
+        {
+            "salad",
+            "ice cream",
+            "soup",
+            "bread",
+            "biscuit",
+            "pizza",
+            "peanut",
+            "cheese",
+            "butter",
+            "jam"
+        };
+        public string[] sport =
+        {
+            "soccer",
+            "basketball",
+            "tennis",
+            "athletics",
+            "baseball",
+            "gymnastic",
+            "cycling",
+            "skiing",
+            "golf",
+            "skateboarding"
+        };
 
 
         int index; // vị trí xuất hiện bức ảnh trong mảng
@@ -67,8 +93,12 @@ namespace project1
             // từ liệu từ form Topic
             if (Program.topic_string == "fruit")
                 answer = fruit;
-            else
+            else if (Program.topic_string == "animal")
                 answer = animal;
+            else if (Program.topic_string == "food")
+                answer = food;
+            else
+                answer = sport;
 
             picture = new string[10];
             for (int i = 1; i <= 10; ++i)
