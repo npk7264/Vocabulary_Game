@@ -48,5 +48,10 @@ namespace project1
             HighScore frm = new HighScore();
             frm.ShowDialog();
         }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

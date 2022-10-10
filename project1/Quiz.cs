@@ -60,6 +60,7 @@ namespace project1
 
         private void Quiz_Load(object sender, EventArgs e)
         {
+            Program.music.settings.volume = 50;
             picUnmute.Visible = false;
             picMute.Visible = true;
 
@@ -81,7 +82,7 @@ namespace project1
             // hiển thị ảnh
             picQuiz.BackgroundImage = Image.FromFile(picture[index]);
             lbQuestion.Text = "QUESTION: " + question.ToString();
-            lbScore.Text = "SCORE: " + score;
+            lbScore.Text = score.ToString();
         }
 
         private void txtInput_KeyUp(object sender, KeyEventArgs e)
@@ -93,7 +94,7 @@ namespace project1
                     SpVoice obj = new SpVoice();
                     obj.Speak("Correct", SpeechVoiceSpeakFlags.SVSFDefault);
                     score += 2;
-                    lbScore.Text = "SCORE: " + score;
+                    lbScore.Text = score.ToString();
                     pnQuestion.Visible = false;
                     pnResult.Visible = true;
                     picResult.BackgroundImage = Properties.Resources.like;
@@ -211,6 +212,18 @@ namespace project1
         {
             SpVoice obj = new SpVoice();
             obj.Speak(lbCorrectAnswer.Text, SpeechVoiceSpeakFlags.SVSFDefault);
+        }
+
+        private void picHome_Click(object sender, EventArgs e)
+        {
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+
+            foreach (Form f in openForms)
+                if (f.Name != "Main")
+                    f.Close();
         }
     }
 }

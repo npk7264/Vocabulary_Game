@@ -295,5 +295,29 @@
   <ItemGroup>
     <None Include="Resources\sing1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216242_home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\653278_coin_bitcoin_cash_currency_dollar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211651_close_round_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211650_close_circled_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

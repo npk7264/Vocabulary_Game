@@ -38,5 +38,10 @@ namespace project1
                 }
             }
         }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.picMic = new System.Windows.Forms.PictureBox();
             this.pnMic = new System.Windows.Forms.Panel();
             this.lbQuestion = new System.Windows.Forms.Label();
+            this.picHome = new System.Windows.Forms.PictureBox();
             this.pnQuestion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnResult.SuspendLayout();
@@ -58,16 +59,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.picNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMic)).BeginInit();
             this.pnMic.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.SuspendLayout();
             // 
             // txtInput
             // 
             this.txtInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtInput.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput.Font = new System.Drawing.Font("Arial Rounded MT Bold", 34.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInput.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtInput.Location = new System.Drawing.Point(511, 685);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(695, 77);
+            this.txtInput.Size = new System.Drawing.Size(695, 73);
             this.txtInput.TabIndex = 1;
             this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtInput_KeyUp);
@@ -78,12 +80,14 @@
             this.lbScore.BackColor = System.Drawing.Color.Transparent;
             this.lbScore.Font = new System.Drawing.Font("Hobo Std", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbScore.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lbScore.Location = new System.Drawing.Point(903, 81);
+            this.lbScore.Image = global::project1.Properties.Resources.coin;
+            this.lbScore.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbScore.Location = new System.Drawing.Point(1072, 67);
             this.lbScore.Name = "lbScore";
-            this.lbScore.Size = new System.Drawing.Size(238, 63);
+            this.lbScore.Size = new System.Drawing.Size(135, 86);
             this.lbScore.TabIndex = 2;
-            this.lbScore.Text = "SCORE: 0";
-            this.lbScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbScore.Text = "10";
+            this.lbScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnQuestion
             // 
@@ -161,7 +165,7 @@
             this.picUnmute.BackgroundImage = global::project1.Properties.Resources.volume_mute;
             this.picUnmute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picUnmute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUnmute.Location = new System.Drawing.Point(1196, 71);
+            this.picUnmute.Location = new System.Drawing.Point(1292, 67);
             this.picUnmute.Name = "picUnmute";
             this.picUnmute.Size = new System.Drawing.Size(105, 82);
             this.picUnmute.TabIndex = 8;
@@ -175,7 +179,7 @@
             this.picMute.BackgroundImage = global::project1.Properties.Resources.volume_up;
             this.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picMute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMute.Location = new System.Drawing.Point(1196, 71);
+            this.picMute.Location = new System.Drawing.Point(1292, 67);
             this.picMute.Name = "picMute";
             this.picMute.Size = new System.Drawing.Size(105, 82);
             this.picMute.TabIndex = 7;
@@ -211,7 +215,7 @@
             this.picBack.BackgroundImage = global::project1.Properties.Resources.back_arrow;
             this.picBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBack.Location = new System.Drawing.Point(406, 71);
+            this.picBack.Location = new System.Drawing.Point(320, 67);
             this.picBack.Name = "picBack";
             this.picBack.Size = new System.Drawing.Size(107, 84);
             this.picBack.TabIndex = 19;
@@ -265,13 +269,27 @@
             this.lbQuestion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lbQuestion.Font = new System.Drawing.Font("Hobo Std", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuestion.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbQuestion.Location = new System.Drawing.Point(576, 71);
+            this.lbQuestion.ForeColor = System.Drawing.Color.DimGray;
+            this.lbQuestion.Location = new System.Drawing.Point(706, 71);
             this.lbQuestion.Name = "lbQuestion";
             this.lbQuestion.Size = new System.Drawing.Size(302, 82);
             this.lbQuestion.TabIndex = 25;
             this.lbQuestion.Text = "QUESTION: 1";
             this.lbQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picHome
+            // 
+            this.picHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picHome.BackColor = System.Drawing.Color.SteelBlue;
+            this.picHome.BackgroundImage = global::project1.Properties.Resources._216242_home_icon;
+            this.picHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picHome.Location = new System.Drawing.Point(523, 67);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(107, 84);
+            this.picHome.TabIndex = 26;
+            this.picHome.TabStop = false;
+            this.picHome.Click += new System.EventHandler(this.picHome_Click);
             // 
             // Quiz
             // 
@@ -281,6 +299,7 @@
             this.BackgroundImage = global::project1.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1716, 778);
+            this.Controls.Add(this.picHome);
             this.Controls.Add(this.lbQuestion);
             this.Controls.Add(this.pnMic);
             this.Controls.Add(this.picNext);
@@ -296,6 +315,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "10";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Quiz_Load);
             this.pnQuestion.ResumeLayout(false);
@@ -311,6 +331,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMic)).EndInit();
             this.pnMic.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +356,6 @@
         private System.Windows.Forms.PictureBox picMic;
         private System.Windows.Forms.Panel pnMic;
         private System.Windows.Forms.Label lbQuestion;
+        private System.Windows.Forms.PictureBox picHome;
     }
 }
