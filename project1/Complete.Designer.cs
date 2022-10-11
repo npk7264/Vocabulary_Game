@@ -52,7 +52,7 @@
             this.lbYourScore.BackColor = System.Drawing.Color.Transparent;
             this.lbYourScore.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbYourScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbYourScore.Location = new System.Drawing.Point(974, 34);
+            this.lbYourScore.Location = new System.Drawing.Point(988, 34);
             this.lbYourScore.Name = "lbYourScore";
             this.lbYourScore.Size = new System.Drawing.Size(124, 83);
             this.lbYourScore.TabIndex = 0;
@@ -167,7 +167,7 @@
             this.lbHighScore.BackColor = System.Drawing.Color.Transparent;
             this.lbHighScore.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHighScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbHighScore.Location = new System.Drawing.Point(973, 139);
+            this.lbHighScore.Location = new System.Drawing.Point(987, 139);
             this.lbHighScore.Name = "lbHighScore";
             this.lbHighScore.Size = new System.Drawing.Size(125, 83);
             this.lbHighScore.TabIndex = 8;
