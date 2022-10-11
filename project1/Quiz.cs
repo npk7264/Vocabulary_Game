@@ -83,9 +83,11 @@ namespace project1
 
         int score = 0; // số câu trả lời đúng
         int question = 1;
+        int timer_count = 0;
 
         private void Quiz_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             Program.music.settings.volume = 50;
             picUnmute.Visible = false;
             picMute.Visible = true;
@@ -111,8 +113,13 @@ namespace project1
 
             // hiển thị ảnh
             picQuiz.BackgroundImage = Image.FromFile(picture[index]);
-            lbQuestion.Text = "QUESTION: " + question.ToString();
+            lbQuestion.Text = question.ToString();
             lbScore.Text = score.ToString();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ++timer_count;
+            lbTime.Text = timer_count.ToString();
         }
 
         private void txtInput_KeyUp(object sender, KeyEventArgs e)
@@ -171,7 +178,7 @@ namespace project1
                 }
                 while (check == false);
                 picQuiz.BackgroundImage = Image.FromFile(picture[index]);
-                lbQuestion.Text = "QUESTION: " + question.ToString();
+                lbQuestion.Text = question.ToString();
                 txtInput.Text = null;
                 txtInput.Visible = true;
                 txtInput.Focus();
@@ -182,6 +189,7 @@ namespace project1
             }
             else // đã duyệt hết các bức ảnh
             {
+                timer1.Stop();
                 Program.nick_score = score;
                 pnQuestion.Visible = false;
                 pnResult.Visible = false;
@@ -190,15 +198,21 @@ namespace project1
                 int count = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Name = N'" + Program.nick_name.ToString() + "'"));
                 if (count == 0)
                 {
-                    sql = "INSERT INTO " + Program.topic_string.ToUpper() + " VALUES (N'" + Program.nick_name + "'" + ", " + Program.nick_score.ToString() + ")";
+                    sql = "INSERT INTO " + Program.topic_string.ToUpper() + " VALUES (N'" + Program.nick_name + "'" + ", " + Program.nick_score.ToString() + ", " + timer_count.ToString() + ")";
                     Functions.RunSQL(sql);
                 }
                 else
                 {
-                    int flag = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Score < " + Program.nick_score));
-                    if (flag > 0)
+                    int flag1 = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Score < " + Program.nick_score + " AND Name = N'" + Program.nick_name + "'"));
+                    int flag2 = Convert.ToInt32(Functions.GetFieldValues("SELECT COUNT(Name) FROM " + Program.topic_string.ToUpper() + " WHERE Score = " + Program.nick_score + " AND Time > " + timer_count.ToString() + " AND Name = N'" + Program.nick_name + "'"));
+                    if (flag1 > 0)
                     {
-                        sql = "UPDATE " + Program.topic_string.ToUpper() + " SET Score = " + Program.nick_score + " WHERE Name = N'" + Program.nick_name + "'";
+                        sql = "UPDATE " + Program.topic_string.ToUpper() + " SET Score = " + Program.nick_score + ", Time = " + timer_count.ToString() + " WHERE Name = N'" + Program.nick_name + "'";
+                        Functions.RunSQL(sql);
+                    }
+                    else if (flag2 > 0)
+                    {
+                        sql = "UPDATE " + Program.topic_string.ToUpper() + " SET Time = " + timer_count.ToString() + " WHERE Name = N'" + Program.nick_name + "'";
                         Functions.RunSQL(sql);
                     }
                 }
@@ -229,6 +243,7 @@ namespace project1
 
         private void picBack_Click(object sender, EventArgs e)
         {
+            timer1.Stop();
             this.Close();
         }
 
@@ -246,6 +261,8 @@ namespace project1
 
         private void picHome_Click(object sender, EventArgs e)
         {
+            timer1.Stop();
+
             List<Form> openForms = new List<Form>();
 
             foreach (Form f in Application.OpenForms)
