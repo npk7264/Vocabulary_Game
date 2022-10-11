@@ -29,7 +29,7 @@ namespace project1
             if (cboTopic.Text != null)
             {
                 string sql;
-                sql = "SELECT ROW_NUMBER() OVER (ORDER BY Score DESC) AS [Rank], Name, Score, Time FROM " + cboTopic.Text + " ORDER BY Score DESC";
+                sql = "SELECT ROW_NUMBER() OVER (ORDER BY Score DESC, Time ASC) AS [Rank], Name, Score, Time FROM " + cboTopic.Text + " ORDER BY Score DESC";
                 dt = Functions.GetDataToTable(sql);
                 dgvHighScore.DataSource = dt;
                 dgvHighScore.Columns[0].HeaderText = "Rank";

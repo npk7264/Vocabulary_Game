@@ -38,7 +38,7 @@
             this.txtNickName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNickName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNickName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickName.Location = new System.Drawing.Point(182, 336);
+            this.txtNickName.Location = new System.Drawing.Point(241, 378);
             this.txtNickName.Name = "txtNickName";
             this.txtNickName.Size = new System.Drawing.Size(630, 47);
             this.txtNickName.TabIndex = 1;
@@ -52,7 +52,7 @@
             this.picClose.BackgroundImage = global::project1.Properties.Resources._211651_close_round_icon__1_;
             this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Location = new System.Drawing.Point(910, 12);
+            this.picClose.Location = new System.Drawing.Point(1015, 2);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(72, 60);
             this.picClose.TabIndex = 2;
@@ -66,7 +66,7 @@
             this.BackColor = System.Drawing.Color.Wheat;
             this.BackgroundImage = global::project1.Properties.Resources.login_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(994, 560);
+            this.ClientSize = new System.Drawing.Size(1113, 622);
             this.Controls.Add(this.picClose);
             this.Controls.Add(this.txtNickName);
             this.DoubleBuffered = true;

@@ -150,7 +150,10 @@ namespace project1
                 pnMic.Visible = true;
                 picNext.Visible = true;
                 if (visited.Count == 5)
+                {
+                    timer1.Stop();
                     picNext.BackgroundImage = Properties.Resources.complete;
+                }
             }
         }
 
@@ -189,7 +192,6 @@ namespace project1
             }
             else // đã duyệt hết các bức ảnh
             {
-                timer1.Stop();
                 Program.nick_score = score;
                 pnQuestion.Visible = false;
                 pnResult.Visible = false;
