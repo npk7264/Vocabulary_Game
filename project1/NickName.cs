@@ -25,7 +25,7 @@ namespace project1
 
                 if (nickname.Length == 0)
                 {
-                    MessageBox.Show("Invalid nick name!");
+                    MessageBox.Show("Invalid nick name!", "Nick name", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtNickName.Text = null;
                 }
                 else

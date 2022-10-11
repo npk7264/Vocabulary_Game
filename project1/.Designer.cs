@@ -29,29 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.WMP_music = new AxWMPLib.AxWindowsMediaPlayer();
             this.picStart = new System.Windows.Forms.PictureBox();
             this.picHighScore = new System.Windows.Forms.PictureBox();
             this.picVocabularyList = new System.Windows.Forms.PictureBox();
             this.pnOption = new System.Windows.Forms.Panel();
             this.picClose = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.WMP_music)).BeginInit();
+            this.WMP_music = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.picStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHighScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVocabularyList)).BeginInit();
             this.pnOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WMP_music)).BeginInit();
             this.SuspendLayout();
-            // 
-            // WMP_music
-            // 
-            this.WMP_music.Enabled = true;
-            this.WMP_music.Location = new System.Drawing.Point(12, 506);
-            this.WMP_music.Name = "WMP_music";
-            this.WMP_music.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP_music.OcxState")));
-            this.WMP_music.Size = new System.Drawing.Size(75, 42);
-            this.WMP_music.TabIndex = 3;
-            this.WMP_music.Visible = false;
             // 
             // picStart
             // 
@@ -85,7 +75,7 @@
             // 
             this.picVocabularyList.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picVocabularyList.BackColor = System.Drawing.Color.Transparent;
-            this.picVocabularyList.BackgroundImage = global::project1.Properties.Resources._5740114_check_checklist_clipboard_list_mark_icon;
+            this.picVocabularyList.BackgroundImage = global::project1.Properties.Resources.dictionary1;
             this.picVocabularyList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picVocabularyList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picVocabularyList.Location = new System.Drawing.Point(660, 15);
@@ -122,6 +112,16 @@
             this.picClose.TabStop = false;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
+            // WMP_music
+            // 
+            this.WMP_music.Enabled = true;
+            this.WMP_music.Location = new System.Drawing.Point(12, 506);
+            this.WMP_music.Name = "WMP_music";
+            this.WMP_music.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP_music.OcxState")));
+            this.WMP_music.Size = new System.Drawing.Size(75, 42);
+            this.WMP_music.TabIndex = 3;
+            this.WMP_music.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -137,12 +137,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.WMP_music)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHighScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVocabularyList)).EndInit();
             this.pnOption.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WMP_music)).EndInit();
             this.ResumeLayout(false);
 
         }

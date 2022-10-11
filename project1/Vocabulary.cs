@@ -117,5 +117,10 @@ namespace project1
                 dgvVocabulary.Columns[2].Width = 200;
             }
         }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

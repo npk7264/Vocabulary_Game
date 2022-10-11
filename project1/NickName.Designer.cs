@@ -52,7 +52,7 @@
             this.picClose.BackgroundImage = global::project1.Properties.Resources._211651_close_round_icon__1_;
             this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Location = new System.Drawing.Point(1015, 2);
+            this.picClose.Location = new System.Drawing.Point(1038, 3);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(72, 60);
             this.picClose.TabIndex = 2;

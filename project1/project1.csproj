@@ -331,5 +331,17 @@
   <ItemGroup>
     <None Include="Resources\question1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dictionary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dictionary1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datagridview_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datagridview_bg1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

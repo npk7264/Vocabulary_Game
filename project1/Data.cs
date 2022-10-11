@@ -85,11 +85,6 @@ namespace project1
             else return false;
         }
 
-        internal static string ConvertDateTime(object p)
-        {
-            throw new NotImplementedException();
-        }
-
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
             SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
