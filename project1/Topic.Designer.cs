@@ -38,12 +38,8 @@
             this.btnFruitTopic = new System.Windows.Forms.Button();
             this.btnSportTopic = new System.Windows.Forms.Button();
             this.picBack = new System.Windows.Forms.PictureBox();
-            this.picUnmute = new System.Windows.Forms.PictureBox();
-            this.picMute = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUnmute)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMute)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -201,34 +197,6 @@
             this.picBack.TabStop = false;
             this.picBack.Click += new System.EventHandler(this.picBack_Click);
             // 
-            // picUnmute
-            // 
-            this.picUnmute.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picUnmute.BackColor = System.Drawing.Color.Wheat;
-            this.picUnmute.BackgroundImage = global::project1.Properties.Resources.volume_mute;
-            this.picUnmute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picUnmute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUnmute.Location = new System.Drawing.Point(1484, 12);
-            this.picUnmute.Name = "picUnmute";
-            this.picUnmute.Size = new System.Drawing.Size(120, 86);
-            this.picUnmute.TabIndex = 22;
-            this.picUnmute.TabStop = false;
-            this.picUnmute.Click += new System.EventHandler(this.picUnmute_Click);
-            // 
-            // picMute
-            // 
-            this.picMute.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picMute.BackColor = System.Drawing.Color.Wheat;
-            this.picMute.BackgroundImage = global::project1.Properties.Resources.volume_up;
-            this.picMute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picMute.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMute.Location = new System.Drawing.Point(1484, 12);
-            this.picMute.Name = "picMute";
-            this.picMute.Size = new System.Drawing.Size(120, 86);
-            this.picMute.TabIndex = 21;
-            this.picMute.TabStop = false;
-            this.picMute.Click += new System.EventHandler(this.picMute_Click);
-            // 
             // Topic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -237,10 +205,8 @@
             this.BackgroundImage = global::project1.Properties.Resources.content_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1727, 732);
-            this.Controls.Add(this.picMute);
             this.Controls.Add(this.picBack);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.picUnmute);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Topic";
@@ -250,8 +216,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUnmute)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMute)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,7 +232,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picBack;
-        private System.Windows.Forms.PictureBox picUnmute;
-        private System.Windows.Forms.PictureBox picMute;
     }
 }

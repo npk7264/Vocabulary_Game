@@ -52,11 +52,11 @@
             this.lbYourScore.BackColor = System.Drawing.Color.Transparent;
             this.lbYourScore.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbYourScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbYourScore.Location = new System.Drawing.Point(421, 129);
+            this.lbYourScore.Location = new System.Drawing.Point(974, 34);
             this.lbYourScore.Name = "lbYourScore";
-            this.lbYourScore.Size = new System.Drawing.Size(240, 83);
+            this.lbYourScore.Size = new System.Drawing.Size(124, 83);
             this.lbYourScore.TabIndex = 0;
-            this.lbYourScore.Text = "label1";
+            this.lbYourScore.Text = "10";
             this.lbYourScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picWin
@@ -77,9 +77,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(303, 34);
+            this.label1.Location = new System.Drawing.Point(466, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 83);
+            this.label1.Size = new System.Drawing.Size(544, 83);
             this.label1.TabIndex = 2;
             this.label1.Text = "YOUR SCORE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,9 +102,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::project1.Properties.Resources.sing;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(1054, 220);
+            this.pictureBox2.Location = new System.Drawing.Point(1054, 245);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(499, 494);
+            this.pictureBox2.Size = new System.Drawing.Size(499, 469);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -154,9 +154,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(785, 34);
+            this.label2.Location = new System.Drawing.Point(481, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(476, 83);
+            this.label2.Size = new System.Drawing.Size(529, 83);
             this.label2.TabIndex = 9;
             this.label2.Text = "HIGH SCORE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,11 +167,11 @@
             this.lbHighScore.BackColor = System.Drawing.Color.Transparent;
             this.lbHighScore.Font = new System.Drawing.Font("Hobo Std", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHighScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbHighScore.Location = new System.Drawing.Point(903, 129);
+            this.lbHighScore.Location = new System.Drawing.Point(973, 139);
             this.lbHighScore.Name = "lbHighScore";
-            this.lbHighScore.Size = new System.Drawing.Size(240, 83);
+            this.lbHighScore.Size = new System.Drawing.Size(125, 83);
             this.lbHighScore.TabIndex = 8;
-            this.lbHighScore.Text = "label1";
+            this.lbHighScore.Text = "10";
             this.lbHighScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Complete

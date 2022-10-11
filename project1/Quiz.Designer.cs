@@ -311,9 +311,9 @@
             this.lbTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbTime.Location = new System.Drawing.Point(1112, 69);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(200, 86);
+            this.lbTime.Size = new System.Drawing.Size(165, 86);
             this.lbTime.TabIndex = 28;
-            this.lbTime.Text = "Time";
+            this.lbTime.Text = "0";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Quiz
@@ -341,6 +341,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Tag = "";
             this.Text = "10";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Quiz_Load);

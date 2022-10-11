@@ -92,19 +92,5 @@ namespace project1
         {
             this.Close();
         }
-
-        private void picUnmute_Click(object sender, EventArgs e)
-        {
-            picMute.Visible = true;
-            picUnmute.Visible = false;
-            Program.music.settings.volume = 50;
-        }
-
-        private void picMute_Click(object sender, EventArgs e)
-        {
-            picMute.Visible = false;
-            picUnmute.Visible = true;
-            Program.music.settings.volume = 0;
-        }
     }
 }
